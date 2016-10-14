@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <meta charset = "utf-8">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Sofia' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="register.css">
+    <script src = "jquery.js" type = "text/javascript"></script>
+    <script src = "registerhandle.js" type = "text/javascript"></script>
+    <title>Registration form</title>
+</head>
+
+<body>
+
+<div class="login">
+    <h2>Register</h2>
+<form action="/register/submit/" method="post" onsubmit="return validate();">
+    <table >
+        <tr>
+            <td>
+                <input type="text" id="username" name="username" required placeholder="Username" autocomplete="off"/><span id="uses" style="color:darkgrey"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" id="email_add" name="email_add" required placeholder="E-Mail Address" autocomplete="off"/><span id="emails" style="color:darkgrey"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" id="number" name="number"required placeholder="Mobile Number" autocomplete="off"/><span id="tels" style="color:darkgrey"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="password" id="password" name="password" required placeholder="Password" autocomplete="off"/><span id="pass" style="color:darkgrey"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" id="submit" name="submit" value="Register" class="animated"/><span id="exist" name="exist" style="color:pink" value=" "></span>
+            </td>
+        </tr>
+    </table>
+    <table id="restab" cellspacing="10">
+
+    </table>
+</form>
+    </div>
+</body>
+
+</html>
+
+<!--<html>
+
+<head>
+    <meta charset = "utf-8">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Sofia' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="template.css">
+    <title>form</title>
+</head>
+
+<body>
+	<div class = "login">
+		<h2>Register</h2>
+		<input type="text" name="username" id="username"  required placeholder="Username" />
+		<input type="password" name="password" id="pw"  required placeholder="password" />
+		<input type="text" name="email" id="username"  required placeholder="E-Mail Address" />
+<input type="submit" class="animated" value="Register" />
+</div>
+</body>
+</html>-->
